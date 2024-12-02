@@ -21,7 +21,7 @@ const handleSubmit = async () => {
     if (response.data.success) {
       message.value = 'Success！';
       isSubmitting.value = false;
-      await router.push('/user');
+      await router.push('/menu');
     } else {
       message.value = response.data.message || 'Failed!';
     }
@@ -52,8 +52,8 @@ const handleSubmit = async () => {
             required
         />
       </div>
-      <button type="submit" :disabled="isSubmitting">
-        {{ isSubmitting ? '登录中...' : '登录' }}
+      <button type="submit">
+        ログイン
       </button>
     </form>
 

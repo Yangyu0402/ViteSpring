@@ -7,7 +7,6 @@ import org.stellas.backend.entity.User;
 import org.stellas.backend.repository.UserRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -23,5 +22,9 @@ public class UserService {
 
     public User getUserById(Integer id) {
         return userRepository.findById(id).orElse(null);
+    }
+
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username).orElse(null);
     }
 }

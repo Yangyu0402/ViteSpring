@@ -3,6 +3,7 @@ import User from '../views/User.vue';
 import Welcome from "../views/Welcome.vue";
 import Login from "../views/Login.vue";
 import Home from "../views/Home.vue";
+import Menu from "../views/Menu.vue";
 
 const routes = [
     {
@@ -10,6 +11,12 @@ const routes = [
         name: 'Login',
         component: Login,
         meta: { title: 'ログイン画面' },
+    },
+    {
+        path: '/menu',
+        name: 'Menu',
+        component: Menu,
+        meta: { title: 'メニュー画面' },
     },
     {
         path: '/',

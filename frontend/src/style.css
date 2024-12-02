@@ -5,3 +5,79 @@ html, body {
     height: 100vh;
     font-family: 'Meiryo', sans-serif;
 }
+
+table.menu {
+	/* display: inline-block; */
+	border-collapse: collapse;
+}
+
+table.menu tr td {
+	padding: 0;
+}
+
+table.menu > thead > tr { /** 見出し */
+	color: #ffffff;
+	text-align: left;
+	padding: 7px 0 7px 14px;
+	font-size: 12pt;
+	background: #d70c24;
+}
+
+table.menu tbody > tr > td {
+	width: 100%;
+	/* min-width: 600px; */
+}
+
+table.menu > tbody > tr > td > table {
+	padding: 0;
+	border-collapse: collapse;
+	background: #ffffff;
+}
+
+table.menu > tbody > tr > td > table > tbody > tr > td {
+	/* height: 90px; */
+	padding: 2% 1%;
+	border: 1px solid #c0c0c0;
+}
+
+table.menu > tbody > tr > td > table > tbody > tr > td > div {
+	position: relative;
+	height: 100%;
+	border-left: 3px solid #d70c24;
+}
+
+table.menu > tbody > tr > td > table > tbody > tr > td > div div.function-nm {
+	/* position: absolute; */
+	/* top: 7px;
+	left: 12px; */
+	margin-left: 1%;
+	text-align: left;
+	width: 90%;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+table.menu > tbody > tr > td > table > tbody > tr > td > div div.description {
+	/* position: absolute; */
+	/* top: 42px;
+	left: 12px; */
+	margin-top: 2%;
+	margin-left: 1%;
+	text-align: left;
+	width: 90%;
+	font-size: 11pt;
+}
+
+table.menu > tbody > tr > td > table > tbody > tr > td > div > i.icon {
+	position: absolute;
+	top: 20px;
+	right: 5px;
+	text-align: left;
+	font-size: 12pt;
+	color: #cccccc;
+	transition: .5s;
+}
+
+table.menu > tbody > tr > td > table > tbody > tr > td:hover {
+	cursor: pointer;
+}
